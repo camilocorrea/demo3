@@ -1,0 +1,28 @@
+.range-slider__range { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #ddd;
+}
+
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+.range-slider__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 40px;
+    background: #fff;
+    box-shadow: -100vw 0 0 100vw #9FB138;
+    border: 2px solid #999; /* 1 */
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}y
